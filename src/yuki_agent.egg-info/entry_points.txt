@@ -1,0 +1,2 @@
+[console_scripts]
+yuki-agent = yuki_agent.cli:main
