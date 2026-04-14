@@ -11,7 +11,7 @@ class Agent:
         self.settings = settings
         self.memory = ConversationMemory()
         self.tools = ToolRegistry()
-        self.llm = SimpleLLM(model_name=settings.model_name)
+        self.llm = SimpleLLM(settings=settings)
 
     def register_tool(self, tool: object) -> None:
         self.tools.register(tool)
